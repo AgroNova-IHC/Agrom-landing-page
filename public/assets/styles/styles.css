@@ -1,16 +1,844 @@
 
 /* ESTILOS GENERALES */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111827;
+    background-color: #F6F7F2;
+}
+
+
 /* FERNANDO - HEADER E INICIO */
+
+#header {
+    background-color: white;
+    width: 100%;
+    padding: 12px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px #dddddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #126B40;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111827;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #126B40;
+}
+
+.inicio {
+    min-height: 650px;
+    padding: 100px 20px;
+    background-color: #F6F7F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.inicio-contenido {
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.inicio-contenido h1 {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #111827;
+    margin-bottom: 25px;
+}
+
+.inicio-contenido p {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-registro {
+    display: inline-block;
+    background-color: #126B40;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-registro:hover {
+    background-color: #0D5432;
+}
+
+.hojas-izquierda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    max-width: 30%;
+}
+
+.hojas-derecha {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    max-width: 30%;
+}
+
 
 /* FABIANA - BENEFICIOS CLAVE */
 
+.beneficios {
+    min-height: 650px;
+    padding: 90px 5%;
+    background-color: #D2E9DC;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beneficios h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.beneficios-descripcion {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+.beneficios-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.beneficio-card {
+    background-color: white;
+    border: 1px solid #CBD5D1;
+    border-radius: 15px;
+    padding: 40px 20px;
+    width: 25%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficio-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.beneficio-card h3 {
+    font-size: 19px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.beneficio-card p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+
 /* TONY - CÓMO FUNCIONA */
+
+.como-funciona {
+    min-height: 650px;
+    padding: 90px 5%;
+    background-color: #E9F3EC;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.como-funciona h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.pasos-descripcion {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 45px;
+}
+
+.pasos-contenedor {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.paso-card {
+    width: 25%;
+    padding: 15px 10px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paso-numero {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    background-color: #126B40;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.paso-card img {
+    width: 100%;
+    max-width: 175px;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.paso-card h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.paso-card p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+    max-width: 230px;
+}
+
 
 /* SEBASTIAN - PLANES AGROM */
 
-/* ESTHER - TESTIMONIOS, FAQ Y CONTACTO */
+.precios {
+    min-height: 650px;
+    padding: 90px 5%;
+    background-color: #F6F7F2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.precios h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.precios-descripcion {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+.planes-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+}
+
+.plan-card {
+    background-color: white;
+    border: 1px solid #64748B;
+    border-radius: 25px;
+    padding: 30px 25px;
+    width: 33.33%;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.plan-premium {
+    background-color: #DCFCE7;
+}
+
+.plan-institucional {
+    background-color: #B7E9CB;
+}
+
+.plan-card h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.plan-subtitulo {
+    font-size: 14px;
+    color: #126B40;
+    text-align: center;
+    min-height: 40px;
+    margin-bottom: 12px;
+}
+
+.plan-card h4 {
+    font-size: 21px;
+    color: #111827;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.plan-card ul {
+    padding-left: 18px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.plan-card li {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 9px;
+}
+
+.plan-boton {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 23px;
+    background-color: #126B40;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan-boton:hover {
+    background-color: #0D5432;
+}
+
+
+/* ESTHER - RESEÑAS, FAQ Y CONTACTO */
+
+.resenas {
+    min-height: 650px;
+    padding: 90px 5%;
+    background-color: #D2E9DC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.resenas h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.resenas-descripcion {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+.resenas-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.resena-card {
+    background-color: white;
+    border: 1px solid #CBD5D1;
+    border-radius: 15px;
+    padding: 30px;
+    width: 33.33%;
+    text-align: left;
+    box-shadow: 0 5px 15px #dddddd;
+}
+
+.comillas {
+    display: block;
+    color: #9CA3AF;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+.resena-card > p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+    min-height: 90px;
+    margin-top: 15px;
+}
+
+.resena-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.resena-usuario img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.resena-usuario h3 {
+    font-size: 14px;
+    color: #111827;
+}
+
+.resena-usuario span {
+    font-size: 12px;
+    color: #475569;
+}
+
+.resenas-aviso {
+    font-size: 13px;
+    color: #475569;
+    margin-top: 25px;
+}
+
+
+/* PREGUNTAS FRECUENTES */
+
+.faq {
+    min-height: 650px;
+    padding: 90px 5%;
+    background-color: #F0F5E8;
+    display: flex;
+    align-items: center;
+}
+
+.faq-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.faq-preguntas {
+    width: 50%;
+}
+
+.faq-preguntas h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+.faq-descripcion {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border: 1px solid #A0B8A5;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-item[open] {
+    background-color: #DCEFE3;
+}
+
+.faq-item summary {
+    padding: 17px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #111827;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    color: #126B40;
+    font-size: 19px;
+}
+
+.faq-item[open] summary::after {
+    content: "-";
+}
+
+.faq-item p {
+    padding: 0 20px 18px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.faq-imagen {
+    width: 50%;
+    min-height: 400px;
+}
+
+
+/* CONTÁCTANOS */
+
+.contacto {
+    min-height: 650px;
+    padding: 90px 5%;
+    background-color: #F6F7F2;
+    display: flex;
+    align-items: center;
+}
+
+.contacto-contenedor {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.contacto-informacion {
+    width: 50%;
+}
+
+.contacto-informacion h2 {
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.contacto-informacion p {
+    font-size: 17px;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contacto-informacion .contacto-ayuda {
+    font-weight: bold;
+    color: #126B40;
+}
+
+.contacto-formulario {
+    width: 50%;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #CBD5D1;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 6px 20px #dddddd;
+}
+
+.contacto-formulario h3 {
+    font-size: 24px;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.contacto-formulario label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+.contacto-formulario input,
+.contacto-formulario select,
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #94A3B8;
+    border-radius: 7px;
+    background-color: white;
+    color: #111827;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario select,
+.contacto-formulario textarea:focus {
+    outline: 2px solid #126B40;
+    border-color: #126B40;
+}
+
+.contacto-formulario textarea {
+    resize: vertical;
+}
+
+.contacto-boton {
+    background-color: #126B40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.contacto-boton:hover {
+    background-color: #0D5432;
+}
+
+#contacto-estado {
+    font-size: 14px;
+    color: #126B40;
+    line-height: 1.5;
+}
+
 
 /* RENZO - DESCARGA Y FOOTER */
 
-/* RESPONSIVE DESIGN */
+.descarga {
+    width: 100%;
+    background-color: #126B40;
+}
+
+.descarga-imagen {
+    width: 100%;
+    background-color: #D2E9DC;
+}
+
+.descarga-imagen img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.descarga-contenido {
+    min-height: 200px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.descarga-texto {
+    max-width: 650px;
+}
+
+.descarga-texto h2 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.descarga-texto p {
+    font-size: 16px;
+    color: #E5F5E9;
+    line-height: 1.6;
+}
+
+.descarga-botones {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.descarga-botones a {
+    display: inline-block;
+}
+
+.descarga-botones img {
+    width: 165px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.descarga-botones img:hover {
+    opacity: 0.85;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 65px 5% 25px;
+}
+
+.footer-contenedor {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.footer-marca {
+    width: 35%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.footer-logo h3 {
+    font-size: 23px;
+    color: white;
+}
+
+.footer-marca p {
+    color: #CBD5E1;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 320px;
+}
+
+.footer-columna {
+    flex: 1;
+}
+
+.footer-columna h4 {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-columna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columna li {
+    margin-bottom: 12px;
+}
+
+.footer-columna a {
+    color: #CBD5E1;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-columna a:hover {
+    color: #86EFAC;
+    text-decoration: underline;
+}
+
+.footer-contacto {
+    font-size: 14px;
+    color: #CBD5E1;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.footer-inferior {
+    max-width: 1200px;
+    margin: 45px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #374151;
+}
+
+.footer-inferior p {
+    color: #CBD5E1;
+    font-size: 13px;
+}
