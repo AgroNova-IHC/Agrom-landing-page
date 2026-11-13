@@ -1,16 +1,748 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* ESTILOS GENERALES */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 
-/* FERNANDO - HEADER E INICIO */
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7f2;
+    color: #111827;
+}
 
-/* FABIANA - BENEFICIOS CLAVE */
+a {
+    text-decoration: none;
+}
 
-/* TONY - CÓMO FUNCIONA */
+button {
+    cursor: pointer;
+}
 
-/* SEBASTIAN - PLANES AGROM */
+section {
+    padding: 80px 5%;
+}
 
-/* ESTHER - TESTIMONIOS, FAQ Y CONTACTO */
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
 
-/* RENZO - DESCARGA Y FOOTER */
+/* Fernando: header e inicio */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 2px 8px #ddd;
+}
 
-/* RESPONSIVE DESIGN */
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #126b40;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.nav-links a:hover {
+    color: #15803d;
+}
+
+.menu-boton {
+    display: none;
+    color: #126b40;
+    background: none;
+    border: 0;
+    font-size: 27px;
+}
+
+.inicio {
+    min-height: 620px;
+    position: relative;
+    background: #f6f7f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.inicio-contenido {
+    max-width: 850px;
+    position: relative;
+    z-index: 1;
+}
+
+.inicio h1 {
+    font-size: 49px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.inicio p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #475569;
+    max-width: 680px;
+    margin: 0 auto 26px;
+}
+
+.btn-registro, .plan-boton {
+    display: inline-block;
+    background: #15803d;
+    color: white;
+    padding: 13px 26px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.btn-registro:hover, .plan-boton:hover {
+    background: #0f5e30;
+}
+
+.hojas-izquierda {
+    width: 220px;
+    max-width: 26%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.hojas-derecha {
+    width: 220px;
+    max-width: 26%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Fabiana: beneficios */
+.beneficios {
+    background: #d9eddf;
+    text-align: center;
+}
+
+.beneficios-descripcion, .pasos-descripcion, .precios-descripcion, .resenas-descripcion, .faq-descripcion {
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.beneficios-contenedor, .pasos-contenedor, .planes-contenedor, .resenas-contenedor {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.beneficio-card {
+    width: 25%;
+    padding: 28px 18px;
+    background: white;
+    border: 1px solid #cbd5d1;
+    border-radius: 12px;
+}
+
+.beneficio-card img {
+    width: 95px;
+    height: 105px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.beneficio-card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.beneficio-card p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+/* Tony: cómo funciona */
+.como-funciona {
+    background: #f0f5eb;
+    text-align: center;
+}
+
+.paso-card {
+    width: 25%;
+    padding: 15px;
+    position: relative;
+}
+
+.paso-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 225px;
+    object-fit: contain;
+}
+
+.paso-card h3 {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.paso-card p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.paso-numero {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    background: #15803d;
+    color: white;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Sebastian: planes */
+.precios {
+    background: #f6f7f2;
+    text-align: center;
+}
+
+.planes-contenedor {
+    align-items: stretch;
+}
+
+.plan-card {
+    width: 33.33%;
+    background: white;
+    border: 1px solid #d5dfd8;
+    border-radius: 14px;
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.plan-premium {
+    background: #e8f5e9;
+}
+
+.plan-institucional {
+    background: #d4ecde;
+}
+
+.plan-card h3, .plan-card h4, .plan-subtitulo {
+    text-align: center;
+}
+
+.plan-card h3 {
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.plan-card h4 {
+    font-size: 19px;
+    margin: 17px 0 22px;
+}
+
+.plan-subtitulo {
+    font-size: 14px;
+    color: #126b40;
+    min-height: 38px;
+}
+
+.plan-card ul {
+    padding-left: 18px;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+.plan-card li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #475569;
+    margin-bottom: 9px;
+}
+
+.plan-boton {
+    margin: auto auto 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Esther: reseñas, FAQ y contacto */
+.resenas {
+    background: #d9eddf;
+    text-align: center;
+}
+
+.resena-card {
+    width: 33.33%;
+    background: white;
+    border: 1px solid #cbd5d1;
+    padding: 28px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.resena-card h3 {
+    color: #126b40;
+    margin-bottom: 13px;
+}
+
+.resena-card p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.faq {
+    background: #f0f5eb;
+}
+
+.faq-contenedor {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.faq-preguntas {
+    width: 58%;
+}
+
+.faq-imagen {
+    width: 42%;
+    text-align: center;
+}
+
+.faq-imagen img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+}
+
+.faq-item {
+    background: white;
+    border: 1px solid #cbd5d1;
+    border-radius: 9px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.faq-item summary {
+    padding: 17px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.faq-item summary:hover {
+    color: #15803d;
+}
+
+.faq-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #475569;
+    padding: 0 17px 18px;
+}
+
+.contacto {
+    background: #103c2c;
+    color: white;
+}
+
+.contacto-contenedor {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.contacto-informacion {
+    width: 50%;
+}
+
+.contacto-informacion .contacto-etiqueta {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #a4f4cb;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.contacto-informacion h2 {
+    font-size: 45px;
+    line-height: 1.18;
+}
+
+.contacto-informacion h2 span {
+    color: #9be4ae;
+}
+
+.contacto-informacion p {
+    color: #e0f5e7;
+    font-size: 16px;
+    line-height: 1.65;
+    margin-top: 25px;
+}
+
+.contacto-informacion .contacto-dato {
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.contacto-formulario {
+    width: 50%;
+    padding: 35px;
+    background: white;
+    color: #111827;
+    border-radius: 15px;
+}
+
+.contacto-formulario h3 {
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.contacto-formulario > p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contacto-formulario label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 16px 0 8px;
+}
+
+.contacto-formulario input, .contacto-formulario select, .contacto-formulario textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 14px;
+    background: white;
+}
+
+.contacto-formulario input:focus, .contacto-formulario select:focus, .contacto-formulario textarea:focus {
+    outline: 2px solid #15803d;
+}
+
+.contacto-boton {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #15803d;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+}
+
+.contacto-boton:hover {
+    background: #0f5e30;
+}
+
+.contacto-formulario .contacto-aviso {
+    margin: 12px 0 0;
+    font-size: 12px;
+}
+
+#contacto-estado {
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: #126b40;
+}
+
+#consulta-preparada {
+    margin-top: 10px;
+}
+
+#consulta-preparada[hidden] {
+    display: none;
+}
+
+/* Renzo: descarga y footer */
+.descarga {
+    background: #126b40;
+    color: white;
+}
+
+.descarga-contenedor {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.descarga-imagen {
+    width: 45%;
+}
+
+.descarga-imagen img {
+    width: 100%;
+}
+
+.descarga-contenido {
+    width: 55%;
+}
+
+.descarga-contenido p {
+    color: #e5f5e9;
+    line-height: 1.6;
+    margin: 14px 0 22px;
+}
+
+.descarga-botones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.descarga-botones img {
+    width: 156px;
+    height: auto;
+}
+
+.descarga-contenido .descarga-nota {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.footer {
+    background: #111827;
+    color: white;
+    padding: 55px 5% 25px;
+}
+
+.footer-contenedor {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-marca {
+    width: 32%;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.footer-logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.footer-marca p, .footer-columna p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-columna h4 {
+    margin-bottom: 18px;
+}
+
+.footer-columna ul {
+    list-style: none;
+}
+
+.footer-columna li {
+    margin-bottom: 12px;
+}
+
+.footer-columna a {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.footer-columna a:hover {
+    color: #9be4ae;
+}
+
+.footer-inferior {
+    max-width: 1200px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #374151;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+/* Celular y tablet */
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .beneficios-contenedor, .pasos-contenedor {
+        flex-wrap: wrap;
+    }
+
+    .beneficio-card, .paso-card {
+        width: calc(50% - 10px);
+    }
+
+    .contacto-contenedor {
+        gap: 30px;
+    }
+
+    .contacto-informacion h2 {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    section {
+        padding: 60px 6%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-boton {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .nav-links.mostrar {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-top: 1px solid #edf0ed;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 11px 0;
+        font-size: 15px;
+    }
+
+    .inicio {
+        min-height: 570px;
+    }
+
+    .inicio h1 {
+        font-size: 35px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .hojas-izquierda, .hojas-derecha {
+        width: 115px;
+        opacity: .65;
+    }
+
+    .beneficio-card, .paso-card, .plan-card, .resena-card {
+        width: 100%;
+    }
+
+    .beneficios-contenedor, .pasos-contenedor, .planes-contenedor, .resenas-contenedor {
+        flex-direction: column;
+    }
+
+    .faq-contenedor, .contacto-contenedor, .descarga-contenedor, .footer-contenedor {
+        flex-direction: column;
+    }
+
+    .faq-preguntas, .faq-imagen, .contacto-informacion, .contacto-formulario, .descarga-imagen, .descarga-contenido, .footer-marca {
+        width: 100%;
+    }
+
+    .contacto-informacion h2 {
+        font-size: 33px;
+    }
+
+    .contacto-formulario {
+        padding: 25px 20px;
+    }
+
+    .faq-imagen img {
+        max-width: 240px;
+    }
+
+    .descarga-imagen {
+        text-align: center;
+    }
+
+    .descarga-imagen img {
+        max-width: 340px;
+    }
+
+}
