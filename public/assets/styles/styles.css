@@ -1,6 +1,4 @@
-
-/* ESTILOS GENERALES */
-
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -9,41 +7,55 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+    scroll-padding-top: 80px;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background: #f6f7f2;
     color: #111827;
-    background-color: #F6F7F2;
 }
 
+a {
+    text-decoration: none;
+}
 
-/* FERNANDO - HEADER E INICIO */
+button {
+    cursor: pointer;
+}
 
+section {
+    padding: 80px 5%;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Fernando: header e inicio */
 #header {
-    background-color: white;
-    width: 100%;
-    padding: 12px 5%;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px #dddddd;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 2px 8px #ddd;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1200px;
     margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #126B40;
+    color: #126b40;
     font-size: 22px;
     font-weight: bold;
 }
@@ -55,145 +67,126 @@ body {
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
     list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #111827;
     font-size: 15px;
     font-weight: bold;
+    color: #111827;
 }
 
 .nav-links a:hover {
-    color: #126B40;
+    color: #15803d;
+}
+
+.menu-boton {
+    display: none;
+    color: #126b40;
+    background: none;
+    border: 0;
+    font-size: 27px;
 }
 
 .inicio {
-    min-height: 650px;
-    padding: 100px 20px;
-    background-color: #F6F7F2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 620px;
     position: relative;
+    background: #f6f7f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     overflow: hidden;
 }
 
 .inicio-contenido {
-    max-width: 900px;
-    text-align: center;
+    max-width: 850px;
     position: relative;
     z-index: 1;
 }
 
-.inicio-contenido h1 {
-    font-size: 54px;
-    font-weight: 800;
-    line-height: 1.15;
-    color: #111827;
-    margin-bottom: 25px;
+.inicio h1 {
+    font-size: 49px;
+    line-height: 1.2;
+    margin-bottom: 22px;
 }
 
-.inicio-contenido p {
-    font-size: 16px;
-    color: #475569;
+.inicio p {
+    font-size: 17px;
     line-height: 1.6;
-    margin-bottom: 25px;
+    color: #475569;
+    max-width: 680px;
+    margin: 0 auto 26px;
 }
 
-.btn-registro {
+.btn-registro, .plan-boton {
     display: inline-block;
-    background-color: #126B40;
+    background: #15803d;
     color: white;
     padding: 13px 26px;
-    border-radius: 12px;
-    font-size: 15px;
+    border-radius: 9px;
     font-weight: bold;
-    text-decoration: none;
 }
 
-.btn-registro:hover {
-    background-color: #0D5432;
+.btn-registro:hover, .plan-boton:hover {
+    background: #0f5e30;
 }
 
 .hojas-izquierda {
+    width: 220px;
+    max-width: 26%;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 260px;
-    max-width: 30%;
 }
 
 .hojas-derecha {
+    width: 220px;
+    max-width: 26%;
     position: absolute;
     top: 0;
     right: 0;
-    width: 250px;
-    max-width: 30%;
 }
 
-
-/* FABIANA - BENEFICIOS CLAVE */
-
+/* Fabiana: beneficios */
 .beneficios {
-    min-height: 650px;
-    padding: 90px 5%;
-    background-color: #D2E9DC;
+    background: #d9eddf;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.beneficios h2 {
-    font-size: 32px;
-    color: #111827;
-    margin-bottom: 15px;
-}
-
-.beneficios-descripcion {
-    font-size: 16px;
+.beneficios-descripcion, .pasos-descripcion, .precios-descripcion, .resenas-descripcion, .faq-descripcion {
     color: #475569;
-    margin-bottom: 40px;
+    line-height: 1.5;
+    margin-bottom: 35px;
 }
 
-.beneficios-contenedor {
+.beneficios-contenedor, .pasos-contenedor, .planes-contenedor, .resenas-contenedor {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     max-width: 1200px;
-    width: 100%;
     margin: auto;
+    gap: 20px;
 }
 
 .beneficio-card {
-    background-color: white;
-    border: 1px solid #CBD5D1;
-    border-radius: 15px;
-    padding: 40px 20px;
     width: 25%;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 28px 18px;
+    background: white;
+    border: 1px solid #cbd5d1;
+    border-radius: 12px;
 }
 
 .beneficio-card img {
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 105px;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .beneficio-card h3 {
     font-size: 19px;
-    color: #111827;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .beneficio-card p {
@@ -202,559 +195,373 @@ body {
     line-height: 1.6;
 }
 
-
-/* TONY - CÓMO FUNCIONA */
-
+/* Tony: cómo funciona */
 .como-funciona {
-    min-height: 650px;
-    padding: 90px 5%;
-    background-color: #E9F3EC;
+    background: #f0f5eb;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.como-funciona h2 {
-    font-size: 32px;
-    color: #111827;
-    margin-bottom: 12px;
-}
-
-.pasos-descripcion {
-    font-size: 16px;
-    color: #475569;
-    margin-bottom: 45px;
-}
-
-.pasos-contenedor {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
 }
 
 .paso-card {
     width: 25%;
-    padding: 15px 10px;
-    text-align: center;
+    padding: 15px;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.paso-card img {
+    width: 100%;
+    max-width: 180px;
+    height: 225px;
+    object-fit: contain;
+}
+
+.paso-card h3 {
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+.paso-card p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .paso-numero {
     position: absolute;
     top: 10px;
-    left: 0;
-    width: 38px;
-    height: 38px;
-    background-color: #126B40;
+    left: 8px;
+    background: #15803d;
     color: white;
-    border-radius: 50%;
+    width: 37px;
+    height: 37px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 16px;
+    justify-content: center;
+    border-radius: 50%;
     font-weight: bold;
 }
 
-.paso-card img {
-    width: 100%;
-    max-width: 175px;
-    height: 230px;
-    object-fit: contain;
-    margin-bottom: 20px;
-}
-
-.paso-card h3 {
-    font-size: 20px;
-    color: #111827;
-    margin-bottom: 10px;
-}
-
-.paso-card p {
-    font-size: 14px;
-    color: #475569;
-    line-height: 1.6;
-    max-width: 230px;
-}
-
-
-/* SEBASTIAN - PLANES AGROM */
-
+/* Sebastian: planes */
 .precios {
-    min-height: 650px;
-    padding: 90px 5%;
-    background-color: #F6F7F2;
+    background: #f6f7f2;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.precios h2 {
-    font-size: 32px;
-    color: #111827;
-    margin-bottom: 12px;
-}
-
-.precios-descripcion {
-    font-size: 16px;
-    color: #475569;
-    margin-bottom: 40px;
 }
 
 .planes-contenedor {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
     align-items: stretch;
 }
 
 .plan-card {
-    background-color: white;
-    border: 1px solid #64748B;
-    border-radius: 25px;
-    padding: 30px 25px;
     width: 33.33%;
-    min-height: 470px;
+    background: white;
+    border: 1px solid #d5dfd8;
+    border-radius: 14px;
+    padding: 30px 22px;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 .plan-premium {
-    background-color: #DCFCE7;
+    background: #e8f5e9;
 }
 
 .plan-institucional {
-    background-color: #B7E9CB;
+    background: #d4ecde;
+}
+
+.plan-card h3, .plan-card h4, .plan-subtitulo {
+    text-align: center;
 }
 
 .plan-card h3 {
-    font-size: 22px;
-    text-align: center;
-    color: #111827;
-    margin-bottom: 15px;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+.plan-card h4 {
+    font-size: 19px;
+    margin: 17px 0 22px;
 }
 
 .plan-subtitulo {
     font-size: 14px;
-    color: #126B40;
-    text-align: center;
-    min-height: 40px;
-    margin-bottom: 12px;
-}
-
-.plan-card h4 {
-    font-size: 21px;
-    color: #111827;
-    text-align: center;
-    margin-bottom: 25px;
+    color: #126b40;
+    min-height: 38px;
 }
 
 .plan-card ul {
     padding-left: 18px;
-    margin-bottom: 30px;
-    flex-grow: 1;
+    margin-bottom: 24px;
+    flex: 1;
 }
 
 .plan-card li {
     font-size: 14px;
-    color: #475569;
     line-height: 1.5;
+    color: #475569;
     margin-bottom: 9px;
 }
 
 .plan-boton {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 12px 23px;
-    background-color: #126B40;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
+    margin: auto auto 0;
     font-size: 14px;
-    font-weight: bold;
     text-align: center;
 }
 
-.plan-boton:hover {
-    background-color: #0D5432;
-}
-
-
-/* ESTHER - RESEÑAS, FAQ Y CONTACTO */
-
+/* Esther: reseñas, FAQ y contacto */
 .resenas {
-    min-height: 650px;
-    padding: 90px 5%;
-    background-color: #D2E9DC;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: #d9eddf;
     text-align: center;
-}
-
-.resenas h2 {
-    font-size: 32px;
-    color: #111827;
-    margin-bottom: 15px;
-}
-
-.resenas-descripcion {
-    font-size: 16px;
-    color: #475569;
-    margin-bottom: 40px;
-}
-
-.resenas-contenedor {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
 }
 
 .resena-card {
-    background-color: white;
-    border: 1px solid #CBD5D1;
-    border-radius: 15px;
-    padding: 30px;
     width: 33.33%;
+    background: white;
+    border: 1px solid #cbd5d1;
+    padding: 28px;
+    border-radius: 12px;
     text-align: left;
-    box-shadow: 0 5px 15px #dddddd;
 }
 
-.comillas {
-    display: block;
-    color: #9CA3AF;
-    font-size: 75px;
-    font-weight: bold;
-    line-height: 0.8;
+.resena-card h3 {
+    color: #126b40;
+    margin-bottom: 13px;
 }
 
-.resena-card > p {
+.resena-card p {
     font-size: 15px;
-    color: #374151;
+    color: #475569;
     line-height: 1.6;
-    min-height: 90px;
-    margin-top: 15px;
 }
-
-.resena-usuario {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-}
-
-.resena-usuario img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-}
-
-.resena-usuario h3 {
-    font-size: 14px;
-    color: #111827;
-}
-
-.resena-usuario span {
-    font-size: 12px;
-    color: #475569;
-}
-
-.resenas-aviso {
-    font-size: 13px;
-    color: #475569;
-    margin-top: 25px;
-}
-
-
-/* PREGUNTAS FRECUENTES */
 
 .faq {
-    min-height: 650px;
-    padding: 90px 5%;
-    background-color: #F0F5E8;
-    display: flex;
-    align-items: center;
+    background: #f0f5eb;
 }
 
 .faq-contenedor {
+    max-width: 1100px;
+    margin: auto;
     display: flex;
     align-items: center;
-    gap: 70px;
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
+    gap: 65px;
 }
 
 .faq-preguntas {
-    width: 50%;
+    width: 58%;
 }
 
-.faq-preguntas h2 {
-    font-size: 32px;
-    color: #111827;
-    margin-bottom: 15px;
+.faq-imagen {
+    width: 42%;
+    text-align: center;
 }
 
-.faq-descripcion {
-    font-size: 16px;
-    color: #475569;
-    margin-bottom: 30px;
+.faq-imagen img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
 }
 
 .faq-item {
-    border: 1px solid #A0B8A5;
-    border-radius: 10px;
-    background-color: white;
+    background: white;
+    border: 1px solid #cbd5d1;
+    border-radius: 9px;
     margin-bottom: 12px;
     overflow: hidden;
 }
 
-.faq-item[open] {
-    background-color: #DCEFE3;
-}
-
 .faq-item summary {
-    padding: 17px 20px;
+    padding: 17px;
     font-weight: bold;
-    font-size: 14px;
-    color: #111827;
+    font-size: 15px;
     cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
 }
 
-.faq-item summary::-webkit-details-marker {
-    display: none;
-}
-
-.faq-item summary::after {
-    content: "+";
-    color: #126B40;
-    font-size: 19px;
-}
-
-.faq-item[open] summary::after {
-    content: "-";
+.faq-item summary:hover {
+    color: #15803d;
 }
 
 .faq-item p {
-    padding: 0 20px 18px;
     font-size: 14px;
-    color: #475569;
     line-height: 1.6;
+    color: #475569;
+    padding: 0 17px 18px;
 }
-
-.faq-imagen {
-    width: 50%;
-    min-height: 400px;
-}
-
-
-/* CONTÁCTANOS */
 
 .contacto {
-    min-height: 650px;
-    padding: 90px 5%;
-    background-color: #F6F7F2;
-    display: flex;
-    align-items: center;
+    background: #103c2c;
+    color: white;
 }
 
 .contacto-contenedor {
     max-width: 1100px;
-    width: 100%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 70px;
 }
 
 .contacto-informacion {
     width: 50%;
 }
 
+.contacto-informacion .contacto-etiqueta {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #a4f4cb;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
 .contacto-informacion h2 {
-    font-size: 38px;
-    color: #111827;
-    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 1.18;
+}
+
+.contacto-informacion h2 span {
+    color: #9be4ae;
 }
 
 .contacto-informacion p {
-    font-size: 17px;
-    color: #475569;
-    line-height: 1.7;
-    margin-bottom: 20px;
+    color: #e0f5e7;
+    font-size: 16px;
+    line-height: 1.65;
+    margin-top: 25px;
 }
 
-.contacto-informacion .contacto-ayuda {
-    font-weight: bold;
-    color: #126B40;
+.contacto-informacion .contacto-dato {
+    font-size: 14px;
+    margin-top: 18px;
 }
 
 .contacto-formulario {
     width: 50%;
     padding: 35px;
-    background-color: white;
-    border: 1px solid #CBD5D1;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    box-shadow: 0 6px 20px #dddddd;
+    background: white;
+    color: #111827;
+    border-radius: 15px;
 }
 
 .contacto-formulario h3 {
-    font-size: 24px;
-    color: #111827;
-    margin-bottom: 12px;
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.contacto-formulario > p {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .contacto-formulario label {
+    display: block;
     font-size: 14px;
     font-weight: bold;
-    color: #1F2937;
+    margin: 16px 0 8px;
 }
 
-.contacto-formulario input,
-.contacto-formulario select,
-.contacto-formulario textarea {
+.contacto-formulario input, .contacto-formulario select, .contacto-formulario textarea {
     width: 100%;
     padding: 13px;
-    border: 1px solid #94A3B8;
-    border-radius: 7px;
-    background-color: white;
-    color: #111827;
-    font-family: Arial, sans-serif;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
     font-size: 14px;
+    background: white;
 }
 
-.contacto-formulario input:focus,
-.contacto-formulario select,
-.contacto-formulario textarea:focus {
-    outline: 2px solid #126B40;
-    border-color: #126B40;
-}
-
-.contacto-formulario textarea {
-    resize: vertical;
+.contacto-formulario input:focus, .contacto-formulario select:focus, .contacto-formulario textarea:focus {
+    outline: 2px solid #15803d;
 }
 
 .contacto-boton {
-    background-color: #126B40;
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #15803d;
     color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 14px 24px;
-    font-size: 15px;
     font-weight: bold;
-    cursor: pointer;
-    margin-top: 8px;
+    border: 0;
+    border-radius: 8px;
 }
 
 .contacto-boton:hover {
-    background-color: #0D5432;
+    background: #0f5e30;
+}
+
+.contacto-formulario .contacto-aviso {
+    margin: 12px 0 0;
+    font-size: 12px;
 }
 
 #contacto-estado {
-    font-size: 14px;
-    color: #126B40;
-    line-height: 1.5;
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: #126b40;
 }
 
+#consulta-preparada {
+    margin-top: 10px;
+}
 
-/* RENZO - DESCARGA Y FOOTER */
+#consulta-preparada[hidden] {
+    display: none;
+}
 
+/* Renzo: descarga y footer */
 .descarga {
-    width: 100%;
-    background-color: #126B40;
+    background: #126b40;
+    color: white;
+}
+
+.descarga-contenedor {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 55px;
 }
 
 .descarga-imagen {
-    width: 100%;
-    background-color: #D2E9DC;
+    width: 45%;
 }
 
 .descarga-imagen img {
-    display: block;
     width: 100%;
-    height: 450px;
-    object-fit: cover;
-    object-position: center;
 }
 
 .descarga-contenido {
-    min-height: 200px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 55px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35px;
+    width: 55%;
 }
 
-.descarga-texto {
-    max-width: 650px;
-}
-
-.descarga-texto h2 {
-    font-size: 32px;
-    color: white;
-    margin-bottom: 12px;
-}
-
-.descarga-texto p {
-    font-size: 16px;
-    color: #E5F5E9;
+.descarga-contenido p {
+    color: #e5f5e9;
     line-height: 1.6;
+    margin: 14px 0 22px;
 }
 
 .descarga-botones {
     display: flex;
     align-items: center;
-    gap: 12px;
-}
-
-.descarga-botones a {
-    display: inline-block;
+    flex-wrap: wrap;
+    gap: 13px;
 }
 
 .descarga-botones img {
-    width: 165px;
+    width: 156px;
     height: auto;
-    display: block;
-    border-radius: 8px;
 }
 
-.descarga-botones img:hover {
-    opacity: 0.85;
+.descarga-contenido .descarga-nota {
+    font-size: 12px;
+    margin-top: 8px;
 }
-
-
-/* FOOTER */
 
 .footer {
-    background-color: #111827;
+    background: #111827;
     color: white;
-    padding: 65px 5% 25px;
+    padding: 55px 5% 25px;
 }
 
 .footer-contenedor {
@@ -762,51 +569,38 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 45px;
+    gap: 40px;
 }
 
 .footer-marca {
-    width: 35%;
+    width: 32%;
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin-bottom: 14px;
 }
 
 .footer-logo img {
-    width: 55px;
-    height: 55px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
 }
 
-.footer-logo h3 {
-    font-size: 23px;
-    color: white;
-}
-
-.footer-marca p {
-    color: #CBD5E1;
+.footer-marca p, .footer-columna p {
+    color: #cbd5e1;
     font-size: 14px;
     line-height: 1.6;
-    max-width: 320px;
-}
-
-.footer-columna {
-    flex: 1;
 }
 
 .footer-columna h4 {
-    font-size: 16px;
-    color: white;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .footer-columna ul {
     list-style: none;
-    padding: 0;
 }
 
 .footer-columna li {
@@ -814,31 +608,141 @@ body {
 }
 
 .footer-columna a {
-    color: #CBD5E1;
     font-size: 14px;
-    text-decoration: none;
+    color: #cbd5e1;
 }
 
 .footer-columna a:hover {
-    color: #86EFAC;
-    text-decoration: underline;
-}
-
-.footer-contacto {
-    font-size: 14px;
-    color: #CBD5E1;
-    line-height: 1.6;
-    margin-top: 20px;
+    color: #9be4ae;
 }
 
 .footer-inferior {
     max-width: 1200px;
-    margin: 45px auto 0;
+    margin: 35px auto 0;
     padding-top: 20px;
     border-top: 1px solid #374151;
+    font-size: 13px;
+    color: #cbd5e1;
 }
 
-.footer-inferior p {
-    color: #CBD5E1;
-    font-size: 13px;
+/* Celular y tablet */
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .beneficios-contenedor, .pasos-contenedor {
+        flex-wrap: wrap;
+    }
+
+    .beneficio-card, .paso-card {
+        width: calc(50% - 10px);
+    }
+
+    .contacto-contenedor {
+        gap: 30px;
+    }
+
+    .contacto-informacion h2 {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    section {
+        padding: 60px 6%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-boton {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-top: 15px;
+    }
+
+    .nav-links.mostrar {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-top: 1px solid #edf0ed;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 11px 0;
+        font-size: 15px;
+    }
+
+    .inicio {
+        min-height: 570px;
+    }
+
+    .inicio h1 {
+        font-size: 35px;
+    }
+
+    .inicio p {
+        font-size: 15px;
+    }
+
+    .hojas-izquierda, .hojas-derecha {
+        width: 115px;
+        opacity: .65;
+    }
+
+    .beneficio-card, .paso-card, .plan-card, .resena-card {
+        width: 100%;
+    }
+
+    .beneficios-contenedor, .pasos-contenedor, .planes-contenedor, .resenas-contenedor {
+        flex-direction: column;
+    }
+
+    .faq-contenedor, .contacto-contenedor, .descarga-contenedor, .footer-contenedor {
+        flex-direction: column;
+    }
+
+    .faq-preguntas, .faq-imagen, .contacto-informacion, .contacto-formulario, .descarga-imagen, .descarga-contenido, .footer-marca {
+        width: 100%;
+    }
+
+    .contacto-informacion h2 {
+        font-size: 33px;
+    }
+
+    .contacto-formulario {
+        padding: 25px 20px;
+    }
+
+    .faq-imagen img {
+        max-width: 240px;
+    }
+
+    .descarga-imagen {
+        text-align: center;
+    }
+
+    .descarga-imagen img {
+        max-width: 340px;
+    }
+
 }

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AgrOm, diagnóstico temprano y protección para tus cultivos.">
+    <meta name="description" content="AgrOm: una propuesta para cuidar tus cultivos con apoyo de inteligencia artificial y registro sin conexión.">
 
-    <title>AgrOm - Landing Page</title>
+    <title>AgrOm | AgroNova</title>
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/styles.css">
@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<!-- FERNANDO - HEADER E INICIO -->
+<!-- Fernando: header e inicio -->
 
 <header id="header">
     <nav class="navbar">
@@ -23,7 +23,9 @@
             <span>AgrOm</span>
         </div>
 
-        <ul class="nav-links">
+        <button type="button" class="menu-boton" id="menu-boton" aria-label="Abrir menú" aria-controls="menu-lista" aria-expanded="false">☰</button>
+
+        <ul class="nav-links" id="menu-lista">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#como-funciona">Cómo funciona</a></li>
@@ -48,19 +50,17 @@
             <h1>Diagnóstico temprano y protección para tus cultivos, estés donde estés</h1>
 
             <p>
-                Detecta plagas a tiempo con diagnósticos por IA.
-                AgrOm funciona offline-first para acompañarte
-                incluso donde la señal no llega.
+                AgrOm propone ayudarte a detectar posibles plagas con imágenes
+                y organizar el cuidado de tus plantas, incluso sin conexión continua a internet.
             </p>
 
             <a href="#precios" class="btn-registro">
-                Regístrate Gratis
+                Conoce nuestros planes
             </a>
         </div>
     </section>
 
-
-    <!-- FABIANA - BENEFICIOS CLAVE -->
+    <!-- Fabiana: beneficios -->
 
     <section id="beneficios" class="beneficios">
         <h2>Beneficios Clave</h2>
@@ -117,8 +117,7 @@
         </div>
     </section>
 
-
-    <!-- TONY - CÓMO FUNCIONA -->
+    <!-- Tony: cómo funciona -->
 
     <section id="como-funciona" class="como-funciona">
         <h2>¿Cómo Funciona?</h2>
@@ -177,15 +176,12 @@
         </div>
     </section>
 
-
-    <!-- SEBASTIAN - PLANES AGROM -->
+    <!-- Sebastian: planes -->
 
     <section id="precios" class="precios">
         <h2>Planes AgrOm</h2>
 
-        <p class="precios-descripcion">
-            Planes para empezar a crecer
-        </p>
+        <p class="precios-descripcion">Opciones referenciales de nuestra propuesta.</p>
 
         <div class="planes-contenedor">
 
@@ -228,8 +224,8 @@
                     <li>Todas las funcionalidades del Plan Gratuito.</li>
                 </ul>
 
-                <a href="#descarga" class="plan-boton">
-                    Suscribirse
+                <a href="#contacto" class="plan-boton" data-plan="premium">
+                    Me interesa este plan
                 </a>
             </article>
 
@@ -250,87 +246,37 @@
                     <li>Todas las funcionalidades del Plan Premium.</li>
                 </ul>
 
-                <a href="#contacto" class="plan-boton">
-                    Solicitar cotización
+                <a href="#contacto" class="plan-boton" data-plan="institucional">
+                    Solicitar información
                 </a>
             </article>
 
         </div>
     </section>
 
-
-    <!-- ESTHER - RESEÑAS, FAQ Y CONTACTO -->
+    <!-- Esther: reseñas, FAQ y contacto -->
 
     <section id="testimonios" class="resenas">
-        <h2>Reseñas de nuestros usuarios</h2>
-
-        <p class="resenas-descripcion">
-            Conoce cómo AgrOm puede ayudar a cuidar diferentes cultivos.
-        </p>
+        <h2>AgrOm para diferentes cultivos</h2>
+        <p class="resenas-descripcion">Tres ejemplos de cómo nuestra propuesta puede ayudar.</p>
 
         <div class="resenas-contenedor">
-
             <article class="resena-card">
-                <span class="comillas">“</span>
-
-                <p>
-                    Ahora registro cada cultivo y sus cambios
-                    sin perder notas entre libretas.
-                </p>
-
-                <div class="resena-usuario">
-                    <img src="assets/images/Usuario.png" alt="Usuario">
-
-                    <div>
-                        <h3>Lucía Paredes</h3>
-                        <span>Agricultora urbana</span>
-                    </div>
-                </div>
+                <h3>Huertos en casa</h3>
+                <p>Organiza tus plantas y lleva un registro sencillo de su crecimiento y cuidados.</p>
             </article>
-
             <article class="resena-card">
-                <span class="comillas">“</span>
-
-                <p>
-                    Gracias a AgrOm pudimos detectar la plaga
-                    a tiempo antes de que afecte a toda la cosecha.
-                </p>
-
-                <div class="resena-usuario">
-                    <img src="assets/images/Usuario.png" alt="Usuario">
-
-                    <div>
-                        <h3>Carlos Mendoza</h3>
-                        <span>Administrador de huerto comunitario</span>
-                    </div>
-                </div>
+                <h3>Huertos comunitarios</h3>
+                <p>Consulta alertas y comparte un seguimiento más ordenado de tus cultivos.</p>
             </article>
-
             <article class="resena-card">
-                <span class="comillas">“</span>
-
-                <p>
-                    El modo offline nos permite seguir trabajando
-                    en cada zona del vivero.
-                </p>
-
-                <div class="resena-usuario">
-                    <img src="assets/images/Usuario.png" alt="Usuario">
-
-                    <div>
-                        <h3>Rosa Villanueva</h3>
-                        <span>Encargada de vivero</span>
-                    </div>
-                </div>
+                <h3>Viveros</h3>
+                <p>Revisa el historial de tus plantas y detecta señales de posibles problemas a tiempo.</p>
             </article>
-
         </div>
-
-
     </section>
 
-
-    <!-- PREGUNTAS FRECUENTES -->
+    
 
     <section id="faq" class="faq">
 
@@ -388,171 +334,110 @@
                 </details>
             </div>
 
-            <div class="faq-imagen"></div>
+            <div class="faq-imagen">
+                <img src="assets/images/Escanea.png" alt="Ejemplo de escaneo de una planta con AgrOm" loading="lazy">
+            </div>
 
         </div>
     </section>
 
-
-
-    <!-- CONTÁCTANOS -->
+    
 
     <section id="contacto" class="contacto">
-
         <div class="contacto-contenedor">
-
             <div class="contacto-informacion">
-                <h2>¿Tienes alguna consulta?</h2>
-
-                <p>
-                    Estamos aquí para ayudarte. Si deseas conocer
-                    más sobre AgrOm o implementar nuestra solución
-                    en tu proyecto o vivero, escríbenos.
-                </p>
-
-                <p class="contacto-ayuda">
-                    Completa el formulario y cuéntanos tu consulta.
-                </p>
+                <p class="contacto-etiqueta">HABLEMOS DE TU PROYECTO</p>
+                <h2>Cada cultivo tiene una historia.<br><span>Queremos conocer la tuya.</span></h2>
+                <p>¿Tienes un huerto, trabajas con una comunidad o administras un vivero? Cuéntanos qué necesitas y prepara una consulta para el equipo.</p>
+                <p class="contacto-dato">✦ &nbsp; Orientado a agricultura urbana y periurbana</p>
+                <p class="contacto-dato">✦ &nbsp; Proyecto académico de AgroNova</p>
             </div>
 
             <form class="contacto-formulario" id="formulario-contacto">
+                <h3>Cuéntanos tu idea</h3>
+                <p>Completa estos datos para preparar tu mensaje.</p>
 
-                <h3>Contáctanos</h3>
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" minlength="3" required>
 
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre"
-                       placeholder="Ingresa tu nombre completo"
-                       autocomplete="name" required>
+                <label for="correo">Correo electrónico *</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" autocomplete="email" required>
 
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo"
-                       placeholder="ejemplo@correo.com"
-                       autocomplete="email" required>
-
-                <label for="tipo-consulta">Tipo de consulta</label>
+                <label for="tipo-consulta">Tipo de consulta *</label>
                 <select id="tipo-consulta" name="tipo-consulta" required>
                     <option value="">Selecciona una opción</option>
                     <option value="general">Consulta general</option>
                     <option value="premium">Plan Premium</option>
-                    <option value="institucional">Plan Institucional</option>
-                    <option value="soporte">Soporte</option>
+                    <option value="institucional">Huerto comunitario / vivero</option>
+                    <option value="soporte">Sugerencia</option>
                 </select>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="4"
-                          placeholder="Cuéntanos en qué podemos ayudarte..."
-                          required></textarea>
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" minlength="10" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
 
-                <button type="submit" class="contacto-boton">
-                    Enviar consulta
-                </button>
-
+                <button type="submit" class="contacto-boton">Preparar y copiar consulta</button>
+                <p class="contacto-aviso">Este prototipo no envía correos. Solo prepara tu consulta para copiarla.</p>
                 <p id="contacto-estado" role="status" aria-live="polite"></p>
-
+                <textarea id="consulta-preparada" rows="5" readonly hidden aria-label="Consulta preparada para copiar"></textarea>
             </form>
-
         </div>
-
     </section>
 
-
-    <!-- RENZO - DESCARGA Y FOOTER -->
+    <!-- Renzo: descarga y footer -->
 
     <section id="descarga" class="descarga">
-
-        <div class="descarga-imagen">
-            <img src="assets/images/Pantalladelfondo.png"
-                 alt="Pantallas de la aplicación AgrOm">
-        </div>
-
-        <div class="descarga-contenido">
-
-            <div class="descarga-texto">
-                <h2>Protege tus cultivos desde hoy</h2>
-
-                <p>
-                    Descarga AgrOm y lleva el diagnóstico temprano
-                    contigo, estés donde estés.
-                </p>
+        <div class="descarga-contenedor">
+            <div class="descarga-imagen">
+                <img src="assets/images/Pantalladelfondo.png" alt="Pantallas de la propuesta AgrOm" loading="lazy">
             </div>
-
-            <div class="descarga-botones">
-                <a href="#descarga" aria-label="AgrOm en Google Play">
-                    <img src="assets/images/DescargaGooglePlay.png"
-                         alt="Descárgala en Google Play">
-                </a>
-
-                <a href="#descarga" aria-label="AgrOm en App Store">
-                    <img src="assets/images/DescargaAppStore.png"
-                         alt="Descárgala en App Store">
-                </a>
+            <div class="descarga-contenido">
+                <h2>Lleva el cuidado de tus plantas contigo</h2>
+                <p>Estamos desarrollando AgrOm. Los enlaces oficiales de descarga estarán disponibles cuando la aplicación sea publicada.</p>
+                <div class="descarga-botones">
+                    <img src="assets/images/DescargaGooglePlay.png" alt="Google Play, disponible próximamente" loading="lazy">
+                    <img src="assets/images/DescargaAppStore.png" alt="App Store, disponible próximamente" loading="lazy">
+                </div>
+                <p class="descarga-nota">Próximamente · Imágenes informativas</p>
             </div>
-
         </div>
     </section>
 
 </main>
 
 <footer id="footer" class="footer">
-
     <div class="footer-contenedor">
-
         <div class="footer-marca">
             <div class="footer-logo">
-                <img src="assets/images/LogoAgrOm.png"
-                     alt="Logo de AgrOm">
-
+                <img src="assets/images/LogoAgrOm.png" alt="Logo de AgrOm">
                 <h3>AgrOm</h3>
             </div>
-
-            <p>
-                Tecnología de AgroNova para observar,
-                diagnosticar y proteger cultivos con confianza.
-            </p>
+            <p>Un proyecto de AgroNova para cuidar los cultivos con apoyo de la tecnología.</p>
         </div>
-
         <div class="footer-columna">
-            <h4>Categorías</h4>
-
+            <h4>Explora</h4>
             <ul>
-                <li><a href="#beneficios">Enciclopedia de plantas</a></li>
-                <li><a href="#como-funciona">Guía de cuidado</a></li>
-                <li><a href="#descarga">Aplicación</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#como-funciona">Cómo funciona</a></li>
+                <li><a href="#precios">Planes</a></li>
             </ul>
         </div>
-
         <div class="footer-columna">
             <h4>Información</h4>
-
             <ul>
-                <li><a href="#footer">Términos y condiciones</a></li>
-                <li><a href="#footer">Política de privacidad</a></li>
+                <li><a href="#testimonios">Para quién es</a></li>
+                <li><a href="#faq">Preguntas frecuentes</a></li>
+                <li><a href="#descarga">Descarga</a></li>
             </ul>
         </div>
-
         <div class="footer-columna">
-            <h4>Ayuda y Soporte</h4>
-
+            <h4>Contacto</h4>
             <ul>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#contacto">Centro de ayuda</a></li>
+                <li><a href="#contacto">Escríbenos</a></li>
             </ul>
-
-            <p class="footer-contacto">
-                Contacto:
-                <a href="mailto:agrom@agronova.pe">
-                    agrom@agronova.pe
-                </a>
-            </p>
+            <p>Proyecto académico de AgroNova.</p>
         </div>
-
     </div>
-
-    <div class="footer-inferior">
-        <p>© 2026 AgroNova / AgrOm</p>
-    </div>
-
+    <div class="footer-inferior">© 2026 AgroNova / AgrOm</div>
 </footer>
-
 </body>
 </html>
