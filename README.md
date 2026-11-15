@@ -67,33 +67,6 @@ Agrom-landing-page/
 └── README.md
 ```
 
-## Imágenes utilizadas
-
-### Proceso de funcionamiento
-
-- `Registro.jpeg`
-- `Escaneo.jpeg`
-- `Diagnóstico.jpeg`
-- `Sincronización.jpeg`
-
-### Mockups de la aplicación
-
-- `mockup-01.png`
-- `mockup-02.png`
-- `mockup-03.png`
-- `mockup-04.png`
-- `mockup-05.png`
-- `mockup-06.png`
-
-### Fotografías complementarias
-
-- `foto-hoja-enferma.jpeg`
-- `foto-huerto-casa.jpeg`
-- `foto-huerto-comunitario.jpeg`
-- `foto-vivero.jpeg`
-
-Las imágenes se encuentran en `public/assets/images/`.
-
 ## Cómo ejecutar el proyecto
 
 1. Descargar o clonar el repositorio.
