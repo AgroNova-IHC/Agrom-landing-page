@@ -1,79 +1,55 @@
 
 # AgrOm - Landing Page
 
+Landing page promocional de **AgrOm**, una aplicación móvil de **AgroNova** orientada al cuidado y seguimiento de cultivos urbanos y periurbanos.
+
 ## Descripción del proyecto
 
-Este proyecto consiste en el desarrollo de una Landing Page para promocionar **AgrOm**, una aplicación móvil propuesta por nuestra startup **AgroNova**.
+AgrOm busca ayudar a identificar posibles plagas y enfermedades a partir de fotografías de hojas, organizar el registro de plantas y consultar alertas y recomendaciones de cuidado.
 
-AgrOm busca ayudar a los usuarios a detectar de manera temprana plagas y enfermedades en sus plantas mediante inteligencia artificial, además de facilitar el monitoreo y seguimiento de sus cultivos.
+Su propuesta contempla el registro local de información cuando la conexión a internet es limitada y la sincronización posterior.
 
-La Landing Page tiene como objetivo presentar la aplicación, explicar sus funcionalidades, mostrar sus beneficios y dar a conocer nuestra solución a los diferentes segmentos de usuarios.
-
-## Sobre AgroNova
-
-AgroNova es una startup tecnológica enfocada en mejorar el cuidado y monitoreo de cultivos urbanos y periurbanos mediante herramientas digitales accesibles.
-
-Nuestra propuesta busca facilitar la detección temprana de plagas, reducir las posibles pérdidas de cultivos y promover prácticas agrícolas sostenibles.
-
-## Integrantes del equipo
-
-| Integrante                       | Código     |
-|----------------------------------|------------|
-| Fernando Antonio Barahona Huayta | U202416843 |
-| Fabiana Soraya Chumioque Borda   | U20251A723 |
-| Tony Jhunior Quispe Palomino     | U20241F714 |
-| Sebastian Kaled Rojas Olivares   | U202519000 |
-| Esther Debora Tito Vilches       | U20241G250 |
-| Renzo Martin Valverde Bejarano   | U202515931 |
+Esta landing page presenta y promociona la aplicación móvil; no reemplaza sus funciones de diagnóstico, registro o sincronización.
 
 ## Segmentos objetivo
 
-Nuestra solución está dirigida a tres segmentos principales:
+AgrOm está dirigido a tres grupos:
 
-1. **Propietarios de huertos urbanos y biohuertos domésticos:** Personas que cultivan plantas en sus hogares y necesitan identificar problemas para cuidar mejor sus cultivos.
+1. **Huertos domésticos:** personas que cultivan plantas en casas, terrazas y biohuertos.
+2. **Huertos comunitarios:** grupos que coordinan el cuidado de diferentes cultivos.
+3. **Viveros y jardinerías:** encargados que necesitan revisar y organizar el estado de varias plantas.
 
-2. **Administradores de huertos comunitarios y proyectos municipales:** Usuarios que necesitan organizar el mantenimiento y seguimiento de múltiples cultivos.
+## Secciones de la Landing Page
 
-3. **Encargados de viveros urbanos y centros de jardinería comerciales:** Personas que necesitan monitorear sus plantas, detectar posibles enfermedades y mantener registros organizados.
+1. **Inicio:** presentación de AgrOm y navegación.
+2. **¿Por qué AgrOm?:** problemática de la detección tardía de enfermedades.
+3. **Beneficios:** diagnóstico con IA, alertas, historial y trabajo sin conexión.
+4. **Cómo funciona:** Registro, Escaneo, Diagnóstico y Sincronización.
+5. **Para quién:** presentación de los tres segmentos objetivo.
+6. **Conoce la aplicación:** carrusel con seis mockups de AgrOm.
+7. **Planes:** Gratuito, Premium e Institucional.
+8. **Preguntas frecuentes:** respuestas a consultas sobre la aplicación.
+9. **Contacto:** formulario con validación y confirmación.
+10. **Descarga:** accesos a Google Play y App Store.
+11. **Footer:** información de AgroNova y enlaces de navegación.
 
-## Principales características de AgrOm
+Los precios son referenciales del proyecto académico.
 
-La aplicación propone ofrecer las siguientes funcionalidades:
+El formulario muestra una confirmación de demostración, pero todavía no envía correos electrónicos.
 
-- **Diagnóstico mediante IA:** Identificación de posibles plagas y enfermedades mediante imágenes.
-- **Inventario de cultivos:** Registro y organización de plantas, lotes y cultivos.
-- **Alertas tempranas:** Notificaciones sobre posibles riesgos para los cultivos.
-- **Funcionamiento offline:** Registro y consulta de información sin conexión permanente a internet.
-- **Historial de cultivos:** Seguimiento del estado de las plantas y sus tratamientos.
-- **Recomendaciones:** Orientación sobre medidas preventivas y cuidados.
-
-## Landing Page
-
-La Landing Page es una página web informativa y promocional que permitirá a los visitantes conocer la aplicación AgrOm.
-
-Su diseño está basado en los mockups desarrollados por el equipo en Figma.
-
-### Secciones de la Landing Page
-
-1. **Header e Inicio:** Barra de navegación, presentación principal de AgrOm y botón de registro.
-2. **Beneficios Clave:** Inventario, Alertas Tempranas, Diagnóstico IA y Funcionamiento Offline.
-3. **Cómo funciona:** Explicación del proceso de registro, escaneo, diagnóstico y sincronización.
-4. **Planes AgrOm:** Presentación de los planes Gratuito, Premium y B2B / Institucional.
-5. **Testimonios:** Opiniones de usuarios sobre los beneficios de AgrOm.
-6. **Preguntas frecuentes (FAQ):** Respuestas a las dudas más comunes.
-7. **Contáctanos:** Formulario para consultas de los visitantes.
-8. **Descarga:** Promoción de la aplicación móvil y botones de descarga.
-9. **Footer:** Información de AgroNova, enlaces y datos de contacto.
+Los enlaces de las tiendas deberán actualizarse cuando estén disponibles las fichas oficiales de AgrOm.
 
 ## Tecnologías utilizadas
 
-- **HTML5:** Estructura y contenido de la Landing Page.
-- **CSS3:** Diseño visual y adaptación a diferentes pantallas.
-- **JavaScript:** Interactividad de la página.
-- **Git:** Control de versiones.
-- **GitHub:** Repositorio y colaboración del equipo.
-- **WebStorm:** Entorno de desarrollo.
-- **Figma:** Diseño de los mockups de la Landing Page.
+- **HTML5:** estructura y contenido de la página.
+- **CSS3:** diseño visual, Flexbox, Grid, efectos hover y responsive.
+- **JavaScript:** menú móvil, selección de planes, formulario y carrusel.
+- **Git:** control de versiones.
+- **GitHub:** repositorio y colaboración del equipo.
+- **Figma:** diseño de las pantallas y mockups.
+- **Visual Studio Code:** desarrollo y edición del código.
+
+No utilizamos frameworks de frontend.
 
 ## Estructura del proyecto
 
@@ -91,28 +67,74 @@ Agrom-landing-page/
 └── README.md
 ```
 
-## Organización del trabajo - GitFlow
+## Imágenes utilizadas
 
-El equipo utiliza GitFlow para organizar el desarrollo de la Landing Page.
+### Proceso de funcionamiento
 
-- **main:** Rama principal con las versiones estables.
-- **develop:** Rama donde se integran los avances del equipo.
-- **feature/:** Ramas destinadas al desarrollo de las secciones asignadas.
+- `Registro.jpeg`
+- `Escaneo.jpeg`
+- `Diagnóstico.jpeg`
+- `Sincronización.jpeg`
 
-### Distribución de tareas
+### Mockups de la aplicación
 
-| Integrante | Sección | Rama |
-|------------|---------|------|
-| Fernando   | Header e Inicio | feature/header-home |
-| Fabiana    | Beneficios Clave | feature/benefits |
-| Tony       | Cómo funciona | feature/how-it-works |
-| Sebastian  | Planes AgrOm | feature/pricing |
-| Esther     | Testimonios, FAQ y Contacto | feature/faq-contact |
-| Renzo      | Descarga y Footer | feature/footer-download |
+- `mockup-01.png`
+- `mockup-02.png`
+- `mockup-03.png`
+- `mockup-04.png`
+- `mockup-05.png`
+- `mockup-06.png`
 
-Cada integrante desarrolla su sección en su propia rama feature, creada a partir de develop.
+### Fotografías complementarias
 
-Una vez terminado su avance, los cambios se integran a develop mediante Pull Requests.
+- `foto-hoja-enferma.jpeg`
+- `foto-huerto-casa.jpeg`
+- `foto-huerto-comunitario.jpeg`
+- `foto-vivero.jpeg`
+
+Las imágenes se encuentran en `public/assets/images/`.
+
+## Cómo ejecutar el proyecto
+
+1. Descargar o clonar el repositorio.
+2. Abrir la carpeta en Visual Studio Code.
+3. Abrir `public/index.html` en el navegador o mediante Live Server.
+4. Comprobar el funcionamiento de los botones, el menú, el formulario y el carrusel.
+5. Verificar la adaptación a computadora, tableta y celular.
+
+## Integrantes del equipo
+
+| Integrante | Código | Responsabilidad |
+|---|---|---|
+| Fernando Antonio Barahona Huayta | U202416843 | Header e Inicio |
+| Fabiana Soraya Chumioque Borda | U20251A723 | Problema y Beneficios |
+| Tony Jhunior Quispe Palomino | U20241F714 | Cómo funciona y galería |
+| Sebastian Kaled Rojas Olivares | U202519000 | Segmentos objetivo y Planes |
+| Esther Debora Tito Vilches | U20241G250 | FAQ, Contacto y JavaScript |
+| Renzo Martin Valverde Bejarano | U202515931 | Descarga y Footer |
+
+## Organización de ramas
+
+Utilizamos el siguiente flujo de trabajo:
+
+- `main`: versión principal estable.
+- `develop`: integración de los avances.
+- `feature/*`: ramas individuales de desarrollo.
+
+### Ramas por integrante
+
+| Integrante | Rama |
+|---|---|
+| Fernando | `feature/header-home` |
+| Fabiana | `feature/benefits` |
+| Tony | `feature/how-it-works` |
+| Sebastian | `feature/pricing` |
+| Esther | `feature/faq-contact` |
+| Renzo | `feature/footer-download` |
+
+Cada integrante desarrolla y guarda sus cambios en su rama.
+
+Las integraciones se realizan mediante Pull Requests hacia `develop`.
 
 ## Repositorio
 
@@ -120,10 +142,12 @@ Una vez terminado su avance, los cambios se integran a develop mediante Pull Req
 
 **Repositorio:** https://github.com/AgroNova-IHC/Agrom-landing-page
 
-## Estado del proyecto
+## Contexto académico
 
-Actualmente, la Landing Page se encuentra en proceso de implementación como parte del curso **HCI for UX Design** de la **Universidad Peruana de Ciencias Aplicadas (UPC)**.
+Proyecto del curso **HCI for UX Design** de la Universidad Peruana de Ciencias Aplicadas (UPC).
 
-El desarrollo se realiza en equipo siguiendo el diseño elaborado en Figma y utilizando HTML, CSS y JavaScript sin frameworks CSS.
+**Ciclo académico:** 2026-2.
 
-**Ciclo académico:** 2026-2
+La landing será utilizada para desarrollar el Capítulo V: Landing Page, Responsive y Despliegue.
+
+Se documentarán el diseño, la adaptación responsive, las interacciones, la accesibilidad, el repositorio y la publicación en GitHub Pages.
