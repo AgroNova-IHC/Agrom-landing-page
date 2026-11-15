@@ -1,52 +1,67 @@
-// Esther: interacciones
-
-const botonMenu = document.getElementById("menu-boton");
-const menu = document.getElementById("menu-lista");
+// Esther: menú móvil
+let botonMenu = document.getElementById("boton-menu");
+let menu = document.getElementById("menu-principal");
 
 botonMenu.addEventListener("click", function () {
-    menu.classList.toggle("mostrar");
-    botonMenu.setAttribute("aria-expanded", menu.classList.contains("mostrar"));
+    menu.classList.toggle("abierto");
+    let abierto = menu.classList.contains("abierto");
+    botonMenu.setAttribute("aria-expanded", abierto);
+    botonMenu.textContent = abierto ? "✕" : "☰";
 });
 
-const enlaces = menu.querySelectorAll("a");
-enlaces.forEach(function (enlace) {
-    enlace.addEventListener("click", function () {
-        menu.classList.remove("mostrar");
+// Esther: cerrar el menú
+let enlaces = menu.querySelectorAll("a");
+for (let i = 0; i < enlaces.length; i++) {
+    enlaces[i].addEventListener("click", function () {
+        menu.classList.remove("abierto");
         botonMenu.setAttribute("aria-expanded", "false");
+        botonMenu.textContent = "☰";
     });
-});
+}
 
-const botonesPlan = document.querySelectorAll("[data-plan]");
-botonesPlan.forEach(function (boton) {
-    boton.addEventListener("click", function () {
-        document.getElementById("tipo-consulta").value = boton.dataset.plan;
+// Esther: elegir un plan
+let botonesPlan = document.querySelectorAll(".elegir-plan");
+for (let i = 0; i < botonesPlan.length; i++) {
+    botonesPlan[i].addEventListener("click", function () {
+        document.getElementById("plan").value = botonesPlan[i].getAttribute("data-plan");
     });
-});
+}
 
-const formulario = document.getElementById("formulario-contacto");
+// Esther: mensaje del formulario
+let formulario = document.getElementById("formulario-contacto");
+let mensaje = document.getElementById("mensaje-formulario");
+
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
-
-    const nombre = document.getElementById("nombre").value.trim();
-    const correo = document.getElementById("correo").value.trim();
-    const tipo = document.getElementById("tipo-consulta");
-    const mensaje = document.getElementById("mensaje").value.trim();
-    const salida = document.getElementById("consulta-preparada");
-    const estado = document.getElementById("contacto-estado");
-
-    salida.value = "CONSULTA AGROM\n" +
-        "Nombre: " + nombre + "\n" +
-        "Correo: " + correo + "\n" +
-        "Tipo: " + tipo.options[tipo.selectedIndex].text + "\n\n" +
-        "Mensaje: " + mensaje;
-
-    salida.hidden = false;
-    salida.focus();
-    salida.select();
-
-    if (document.execCommand("copy")) {
-        estado.textContent = "Consulta copiada. Puedes pegarla en tu correo. No se ha enviado automáticamente.";
-    } else {
-        estado.textContent = "Consulta preparada. Copia el texto de abajo; todavía no se ha enviado.";
-    }
+    let nombre = document.getElementById("nombre").value.trim();
+    mensaje.textContent = "¡Gracias, " + nombre + "! Completaste el formulario correctamente.";
+    mensaje.style.display = "block";
+    formulario.reset();
 });
+
+
+// Esther: galería de la aplicación
+let mockups = document.querySelectorAll(".mockup-slide");
+let posicionMockup = 0;
+let contadorMockup = document.getElementById("mockup-contador");
+
+function mostrarMockup(numero) {
+    mockups[posicionMockup].classList.remove("activo");
+    mockups[posicionMockup].setAttribute("aria-hidden", "true");
+    posicionMockup = (numero + mockups.length) % mockups.length;
+    mockups[posicionMockup].classList.add("activo");
+    mockups[posicionMockup].setAttribute("aria-hidden", "false");
+    contadorMockup.textContent = (posicionMockup + 1) + " de " + mockups.length;
+}
+
+document.getElementById("mockup-anterior").addEventListener("click", function () {
+    mostrarMockup(posicionMockup - 1);
+});
+
+document.getElementById("mockup-siguiente").addEventListener("click", function () {
+    mostrarMockup(posicionMockup + 1);
+});
+
+setInterval(function () {
+    mostrarMockup(posicionMockup + 1);
+}, 5000);
