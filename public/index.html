@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgrOm: aplicación móvil para cuidar tus cultivos, detectar señales de posibles plagas, consultar alertas y organizar tus plantas desde el celular.">
+    <title>AgrOm | Cuida tus cultivos con ayuda de la tecnología</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="assets/scripts/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Fernando: cabecera -->
+    <header class="cabecera">
+        <div class="contenedor barra">
+            <a class="marca" href="#inicio" aria-label="AgrOm, ir al inicio">
+                <img src="assets/images/LogoAgrOm.png" alt="Logotipo de AgrOm" width="48" height="48">
+                <span>Agr<span class="marca-verde">Om</span></span>
+            </a>
+            <button class="boton-menu" id="boton-menu" type="button" aria-label="Abrir menú" aria-controls="menu-principal" aria-expanded="false">☰</button>
+            <nav class="navegacion" id="menu-principal" aria-label="Navegación principal">
+                <a href="#inicio">Inicio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#funciona">Cómo funciona</a>
+                <a href="#usuarios">Para quién</a>
+                <a href="#planes">Planes</a>
+                <a href="#preguntas">FAQ</a>
+                <a href="#contacto">Contacto</a>
+                <a class="boton boton-pequeno" href="#descargar">Descargar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Fernando: inicio -->
+        <section class="inicio" id="inicio">
+            <div class="contenedor inicio-contenido">
+                <div class="inicio-texto">
+                    <p class="etiqueta">AGRONOVA PRESENTA · APLICACIÓN MÓVIL</p>
+                    <h1>Cuida hoy tus plantas, <span>protege el cultivo de mañana.</span></h1>
+                    <p class="introduccion">AgrOm te ayuda a identificar señales de posibles plagas, registrar tus plantas y dar seguimiento a tus cultivos desde el celular.</p>
+                    <div class="acciones">
+                        <a class="boton" href="#beneficios">Conoce AgrOm</a>
+                        <a class="boton boton-contorno" href="#funciona">Cómo funciona</a>
+                    </div>
+                    <div class="inicio-ventajas" aria-label="Principales ventajas">
+                        <span>✓ Diagnóstico orientativo</span>
+                        <span>✓ Registro de cultivos</span>
+                        <span>✓ Modo sin conexión</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fabiana: problema -->
+        <section class="problema seccion" id="problema">
+            <div class="contenedor problema-contenido">
+                <div class="problema-texto">
+                    <p class="etiqueta">¿POR QUÉ AGRÓM?</p>
+                    <h2>Detecta a tiempo los problemas de tus plantas</h2>
+                    <p class="problema-descripcion">
+                        Las manchas, el cambio de color y otros síntomas pueden indicar
+                        que una planta necesita atención. Con AgrOm puedes consultar
+                        información orientativa y hacer seguimiento de tus cultivos.
+                    </p>
+                    <img class="foto-problema" src="assets/images/foto-hoja-enferma.jpeg"
+                         alt="Hoja con señales de una posible enfermedad" loading="lazy">
+                </div>
+                <div class="problema-puntos">
+                    <h3>¿Cómo te ayuda AgrOm?</h3>
+                    <article class="punto">
+                        <span class="punto-numero">01</span>
+                        <div><h4>Detección temprana</h4><p>Conoce señales de posibles plagas y enfermedades para actuar con anticipación.</p></div>
+                    </article>
+                    <article class="punto">
+                        <span class="punto-numero">02</span>
+                        <div><h4>Seguimiento organizado</h4><p>Registra tus plantas y consulta sus cuidados desde el celular.</p></div>
+                    </article>
+                    <article class="punto">
+                        <span class="punto-numero">03</span>
+                        <div><h4>Uso sin conexión</h4><p>Continúa registrando información aunque no tengas internet estable.</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion beneficios" id="beneficios">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">CUIDA TUS PLANTAS CON AGRÓM</p>
+                    <h2>Una ayuda práctica para cuidar tus cultivos.</h2>
+                    <p>Herramientas pensadas para acompañarte desde la primera revisión hasta el seguimiento de tus plantas.</p>
+                </div>
+                <div class="beneficios-cuadricula">
+                    <article class="beneficio-tarjeta">
+                        <img src="assets/images/DiagnosticoIA.png" alt="Ícono de una hoja lista para ser analizada" loading="lazy">
+                        <h3>Diagnóstico con IA</h3>
+                        <p>Analiza imágenes de las hojas para orientar la identificación de posibles plagas o enfermedades.</p>
+                    </article>
+                    <article class="beneficio-tarjeta">
+                        <img src="assets/images/Alertas tempranas.png" alt="Campana de alertas tempranas" loading="lazy">
+                        <h3>Alertas preventivas</h3>
+                        <p>Recibe avisos para revisar cambios importantes en el estado de tus plantas.</p>
+                    </article>
+                    <article class="beneficio-tarjeta">
+                        <img src="assets/images/Inventario.png" alt="Maceta junto a una lista de registros" loading="lazy">
+                        <h3>Historial de cultivos</h3>
+                        <p>Guarda inspecciones y cuidados en un solo lugar para consultar su evolución.</p>
+                    </article>
+                    <article class="beneficio-tarjeta">
+                        <img src="assets/images/FuncionamientoOffline.png" alt="Nube sin conexión a internet" loading="lazy">
+                        <h3>Trabajo sin conexión</h3>
+                        <p>La propuesta prioriza el registro local cuando no cuentas con internet continuo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tony: cómo funciona -->
+        <section class="seccion funciona" id="funciona">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">DESCUBRE CÓMO FUNCIONA AGRÓM</p>
+                    <h2>Cuida tus plantas en cuatro pasos</h2>
+                    <p>Desde crear tu cuenta hasta guardar tus datos, AgrOm te acompaña en cada etapa.</p>
+                </div>
+
+                <div class="pasos">
+                    <article class="paso">
+                        <div class="paso-imagen">
+                            <span class="paso-badge">01</span>
+                            <div class="paso-celular">
+                                <img src="assets/images/Registro.jpeg" alt="Pantalla de registro de cuenta en AgrOm" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="paso-info">
+                            <h3>Regístrate</h3>
+                            <p>Crea una cuenta para comenzar a organizar y cuidar tus cultivos.</p>
+                            <span class="paso-pista">Empieza con AgrOm</span>
+                        </div>
+                    </article>
+
+                    <article class="paso">
+                        <div class="paso-imagen">
+                            <span class="paso-badge">02</span>
+                            <div class="paso-celular">
+                                <img src="assets/images/Escaneo.jpeg" alt="Pantalla de escaneo de hojas de AgrOm" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="paso-info">
+                            <h3>Escanea una hoja</h3>
+                            <p>Toma una fotografía de la hoja que presenta manchas o cambios de color.</p>
+                            <span class="paso-pista">Observa la planta</span>
+                        </div>
+                    </article>
+
+                    <article class="paso">
+                        <div class="paso-imagen">
+                            <span class="paso-badge">03</span>
+                            <div class="paso-celular">
+                                <img src="assets/images/Diagnóstico.jpeg" alt="Pantalla de análisis y diagnóstico orientativo de AgrOm" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="paso-info">
+                            <h3>Consulta el diagnóstico</h3>
+                            <p>Revisa el resultado orientativo y las opciones de cuidado para tu planta.</p>
+                            <span class="paso-pista">Conoce el resultado</span>
+                        </div>
+                    </article>
+
+                    <article class="paso">
+                        <div class="paso-imagen">
+                            <span class="paso-badge">04</span>
+                            <div class="paso-celular">
+                                <img src="assets/images/Sincronización.jpeg" alt="Pantalla de sincronización de registros de AgrOm" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="paso-info">
+                            <h3>Sincroniza tus datos</h3>
+                            <p>Guarda registros en tu dispositivo y sincronízalos cuando tengas conexión.</p>
+                            <span class="paso-pista">Mantén tus datos al día</span>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="pasos-final">¿Quieres explorar más pantallas? <a href="#vista">Conoce la aplicación →</a></p>
+            </div>
+        </section>
+
+        <!-- Sebastian: usuarios -->
+        <section class="seccion usuarios" id="usuarios">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">PENSADO PARA TI</p>
+                    <h2>Cada huerto es diferente. AgrOm busca acompañarlos a todos.</h2>
+                    <p>AgrOm está pensado para tres grupos de personas que cuidan cultivos en diferentes espacios.</p>
+                </div>
+                <div class="usuarios-cuadricula">
+                    <article class="usuario-tarjeta">
+                        <span class="tipo">01 · CUIDADO PERSONAL</span>
+                        <img class="foto-usuario" src="assets/images/foto-huerto-casa.jpeg" alt="Huerto doméstico con hortalizas en una terraza" loading="lazy">
+                        <h3>Huertos en casa</h3>
+                        <p>Para quienes cultivan en jardines, terrazas y biohuertos y desean reconocer qué ocurre con sus plantas.</p>
+                        <strong>Diagnósticos sencillos y seguimiento personal.</strong>
+                    </article>
+                    <article class="usuario-tarjeta">
+                        <span class="tipo">02 · TRABAJO EN EQUIPO</span>
+                        <img class="foto-usuario" src="assets/images/foto-huerto-comunitario.jpeg" alt="Personas trabajando juntas en un huerto comunitario" loading="lazy">
+                        <h3>Huertos comunitarios</h3>
+                        <p>Para personas que coordinan el cuidado de varios cultivos y necesitan organizar observaciones compartidas.</p>
+                        <strong>Más orden en las revisiones y alertas.</strong>
+                    </article>
+                    <article class="usuario-tarjeta">
+                        <span class="tipo">03 · CUIDADO COMERCIAL</span>
+                        <img class="foto-usuario" src="assets/images/foto-vivero.jpeg" alt="Vivero con variedad de plantas" loading="lazy">
+                        <h3>Viveros y jardinerías</h3>
+                        <p>Para encargados de revisar muchas plantas y encontrar señales de problemas antes de ofrecerlas al público.</p>
+                        <strong>Inspecciones ágiles e historial de plantas.</strong>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tony: muestra de la aplicación -->
+<section class="seccion vista" id="vista">
+    <div class="contenedor vista-contenido">
+        <div class="vista-texto">
+            <p class="etiqueta">CONOCE LA APLICACIÓN</p>
+            <h2>AgrOm te acompaña en cada cultivo</h2>
+            <p>
+                Descubre cómo se ve AgrOm desde tu celular.
+                Revisa tus plantas, consulta posibles problemas
+                y organiza tus cuidados en un solo lugar.
+            </p>
+            <ul>
+                <li>Escanea hojas y consulta resultados orientativos.</li>
+                <li>Organiza tus plantas en Mi huerto.</li>
+                <li>Revisa alertas y tratamientos sugeridos.</li>
+            </ul>
+            <a class="enlace-verde" href="#descargar">Descargar AgrOm →</a>
+        </div>
+
+        <div class="galeria-mockups" aria-label="Pantallas de AgrOm">
+            <p class="mockup-titulo">ASÍ SE VE AGRÓM</p>
+            <div class="mockup-visor" id="mockup-visor">
+                <figure class="mockup-slide activo" aria-hidden="false">
+                    <div class="mockup-telefono">
+                        <img src="assets/images/mockup-01.png" alt="Pantalla de inicio de AgrOm">
+                    </div>
+                    <figcaption>01. Inicio de AgrOm</figcaption>
+                </figure>
+                <figure class="mockup-slide" aria-hidden="true">
+                    <div class="mockup-telefono">
+                        <img src="assets/images/mockup-02.png" alt="Pantalla de escaneo de una hoja">
+                    </div>
+                    <figcaption>02. Escaneo de hojas</figcaption>
+                </figure>
+                <figure class="mockup-slide" aria-hidden="true">
+                    <div class="mockup-telefono">
+                        <img src="assets/images/mockup-03.png" alt="Pantalla de tratamientos sugeridos">
+                    </div>
+                    <figcaption>03. Tratamientos sugeridos</figcaption>
+                </figure>
+                <figure class="mockup-slide" aria-hidden="true">
+                    <div class="mockup-telefono">
+                        <img src="assets/images/mockup-04.png" alt="Pantalla Mi huerto">
+                    </div>
+                    <figcaption>04. Mi huerto</figcaption>
+                </figure>
+                <figure class="mockup-slide" aria-hidden="true">
+                    <div class="mockup-telefono">
+                        <img src="assets/images/mockup-05.png" alt="Guía de problemas de plantas">
+                    </div>
+                    <figcaption>05. Guía de problemas</figcaption>
+                </figure>
+                <figure class="mockup-slide" aria-hidden="true">
+                    <div class="mockup-telefono">
+                        <img src="assets/images/mockup-06.png" alt="Pantalla de notificaciones y alertas">
+                    </div>
+                    <figcaption>06. Alertas y recordatorios</figcaption>
+                </figure>
+            </div>
+            <div class="mockup-controles">
+                <button id="mockup-anterior" type="button" aria-label="Pantalla anterior">❮</button>
+                <span id="mockup-contador" aria-live="off">1 de 6</span>
+                <button id="mockup-siguiente" type="button" aria-label="Pantalla siguiente">❯</button>
+            </div>
+            <p class="mockup-nota">Usa las flechas para recorrer las pantallas.</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Sebastian: planes -->
+        <section class="seccion planes" id="planes">
+            <div class="contenedor">
+                <div class="titulo-seccion">
+                    <p class="etiqueta">ELIGE TU OPCIÓN</p>
+                    <h2>Un plan para cada forma de cultivar</h2>
+                    <p>Conoce las opciones de AgrOm y elige la que mejor se adapte a tus necesidades.</p>
+                </div>
+                <div class="planes-cuadricula">
+                    <article class="plan-tarjeta">
+                        <div class="plan-cabecera">
+                            <h3>Gratuito</h3>
+                            <p>Ideal para comenzar</p>
+                        </div>
+                        <p class="precio">S/ 0 <span>/ mes</span></p>
+                        <ul>
+                            <li>Registro de hasta 20 plantas</li>
+                            <li>Diagnóstico orientativo</li>
+                            <li>Alertas básicas</li>
+                            <li>Historial de registros</li>
+                        </ul>
+                        <a class="boton boton-ancho elegir-plan" href="#contacto" data-plan="Gratuito">Elegir Gratuito</a>
+                    </article>
+                    <article class="plan-tarjeta plan-destacado">
+                        <span class="plan-etiqueta">RECOMENDADO</span>
+                        <div class="plan-cabecera">
+                            <h3>Premium</h3>
+                            <p>Para quienes cuidan más cultivos</p>
+                        </div>
+                        <p class="precio">S/ 20 <span>/ mes</span></p>
+                        <ul>
+                            <li>Registro de plantas sin límite</li>
+                            <li>Calendario de cuidados</li>
+                            <li>Historial con fotografías</li>
+                            <li>Opciones de sincronización</li>
+                        </ul>
+                        <a class="boton boton-ancho elegir-plan" href="#contacto" data-plan="Premium">Me interesa Premium</a>
+                    </article>
+                    <article class="plan-tarjeta">
+                        <div class="plan-cabecera">
+                            <h3>Institucional</h3>
+                            <p>Para viveros y comunidades</p>
+                        </div>
+                        <p class="precio precio-consulta">A consultar</p>
+                        <ul>
+                            <li>Administración de varios cultivos</li>
+                            <li>Organización de inspecciones</li>
+                            <li>Seguimiento de tareas</li>
+                            <li>Reportes para equipos</li>
+                        </ul>
+                        <a class="boton boton-ancho elegir-plan" href="#contacto" data-plan="Institucional">Consultar este plan</a>
+                    </article>
+                </div>
+                <p class="nota-planes">* Precios y características referenciales del prototipo académico. Deben confirmarse antes de su contratación.</p>
+            </div>
+        </section>
+
+        <!-- Esther: preguntas frecuentes -->
+        <section class="seccion preguntas" id="preguntas">
+            <div class="contenedor preguntas-contenido">
+                <div class="preguntas-titulo">
+                    <p class="etiqueta">PREGUNTAS FRECUENTES</p>
+                    <h2>Todo lo que necesitas saber sobre AgrOm</h2>
+                    <p>Resuelve tus dudas y conoce mejor la aplicación antes de comenzar.</p>
+                    <div class="preguntas-ayuda">
+                        <strong>¿Tienes otra pregunta?</strong>
+                        <p>Puedes escribirnos desde la sección de contacto.</p>
+                        <a class="boton boton-contorno" href="#contacto">Ir a contacto</a>
+                    </div>
+                </div>
+                <div class="lista-preguntas">
+                    <details>
+                        <summary>¿Qué es AgrOm?</summary>
+                        <p>AgrOm es una aplicación móvil de AgroNova que te ayuda a revisar el estado de tus plantas, consultar diagnósticos orientativos y organizar su seguimiento.</p>
+                    </details>
+                    <details>
+                        <summary>¿A quién está dirigida?</summary>
+                        <p>Está dirigida a personas con huertos en casa, administradores de huertos comunitarios y encargados de viveros o centros de jardinería.</p>
+                    </details>
+                    <details>
+                        <summary>¿Cómo se identifican los posibles problemas de las plantas?</summary>
+                        <p>Con una fotografía de la hoja, AgrOm ofrece información orientativa sobre posibles plagas o enfermedades para apoyar el cuidado del cultivo.</p>
+                    </details>
+                    <details>
+                        <summary>¿Puedo usarla sin conexión a internet?</summary>
+                        <p>AgrOm contempla el registro local de información, de modo que puedas seguir anotando inspecciones cuando tengas conectividad limitada.</p>
+                    </details>
+                    <details>
+                        <summary>¿AgrOm reemplaza a un especialista agrícola?</summary>
+                        <p>No. Los resultados son orientativos. Para problemas graves o persistentes, es importante consultar a un profesional.</p>
+                    </details>
+                    <details>
+                        <summary>¿Dónde puedo descargar AgrOm?</summary>
+                        <p>Puedes visitar la sección de descarga de esta página para acceder a Google Play o App Store. Los enlaces directos a AgrOm se configurarán con sus fichas oficiales.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Esther: contacto -->
+        <section class="seccion contacto" id="contacto">
+            <div class="contenedor contacto-contenido">
+                <div class="contacto-texto">
+                    <p class="etiqueta etiqueta-clara">HABLEMOS DE AGRÓM</p>
+                    <h2>Queremos conocer lo que necesitas para cuidar tus cultivos.</h2>
+                    <p>¿Tienes un huerto en casa, participas en un proyecto comunitario o trabajas en un vivero? Cuéntanos qué te gustaría encontrar en AgrOm.</p>
+                    <p class="nota-contacto">Tu opinión nos ayuda a mejorar nuestra propuesta móvil.</p>
+                </div>
+                <div class="contacto-caja">
+                    <h3>Déjanos tu consulta</h3>
+                    <p>Déjanos tus datos y cuéntanos qué necesitas.</p>
+                    <form id="formulario-contacto">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Escribe tu nombre" required minlength="2">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" name="correo" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" required>
+                        <label for="perfil">¿A qué grupo perteneces?</label>
+                        <select id="perfil" name="perfil" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Huerto en casa">Huerto en casa</option>
+                            <option value="Huerto comunitario">Huerto comunitario</option>
+                            <option value="Vivero o jardinería">Vivero o jardinería</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <label for="plan">Plan que te interesa</label>
+                        <select id="plan" name="plan">
+                            <option value="">Aún no lo sé</option>
+                            <option value="Gratuito">Gratuito</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Institucional">Institucional</option>
+                        </select>
+                        <label for="mensaje">Tu mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" minlength="10" placeholder="Cuéntanos tu idea o consulta" required></textarea>
+                        <button class="boton boton-ancho" type="submit">Enviar consulta</button>
+                        <p class="mensaje-formulario" id="mensaje-formulario" role="status" aria-live="polite"></p>
+                        <p class="aclaracion">Formulario de demostración: no envía datos a un servidor.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Renzo: descarga -->
+        <section class="descargar" id="descargar">
+            <div class="contenedor descarga-contenido">
+                <div class="descarga-texto">
+                    <p class="etiqueta">AGRÓM EN TU CELULAR</p>
+                    <h2>Empieza a cuidar tus plantas con AgrOm</h2>
+                    <p>Conoce los cultivos que tienes a tu cuidado, revisa alertas y consulta tus registros dondequiera que estés.</p>
+                    <div class="tiendas" aria-label="Tiendas de aplicaciones">
+                        <!-- Renzo: sustituir href por enlaces oficiales de AgrOm -->
+                        <a class="tienda" href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer" aria-label="Abrir Google Play">
+                            <img src="assets/images/DescargaGooglePlay.png" alt="Ver en Google Play">
+                        </a>
+                        <a class="tienda" href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer" aria-label="Abrir App Store">
+                            <img src="assets/images/DescargaAppStore.png" alt="Ver en App Store">
+                        </a>
+                    </div>
+                    <p class="nota-descarga">Los botones abren las tiendas generales. Reemplaza sus enlaces por las fichas oficiales de AgrOm.</p>
+                </div>
+                <div class="descarga-imagen">
+                    <img src="assets/images/Pantalladelfondo.png" alt="Vista general de las pantallas móviles de AgrOm" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Renzo: footer -->
+    <footer class="pie">
+        <div class="contenedor pie-contenido">
+            <div class="pie-marca">
+                <a class="marca" href="#inicio"><img src="assets/images/LogoAgrOm.png" alt="AgrOm" width="43" height="43"><span>Agr<span class="marca-verde">Om</span></span></a>
+                <p>Una aplicación móvil de AgroNova para el cuidado y seguimiento de cultivos.</p>
+            </div>
+            <div>
+                <h3>Explora</h3>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#funciona">Cómo funciona</a>
+                <a href="#usuarios">Para quién</a>
+                <a href="#planes">Planes</a>
+            </div>
+            <div>
+                <h3>Información</h3>
+                <a href="#preguntas">Preguntas frecuentes</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#descargar">Descarga</a>
+            </div>
+        </div>
+        <div class="contenedor pie-final">
+            <p>© 2026 AgroNova · Proyecto académico AgrOm.</p>
+            <a href="#inicio">Volver al inicio ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
